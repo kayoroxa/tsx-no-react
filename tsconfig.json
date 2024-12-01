@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "jsx": "react", // Pode ser "react-jsx" ou "preserve"
+    "jsxFactory": "h", // Substitua pelo nome da função que criará os elementos (ex.: "h")
+    "jsxFragmentFactory": "Fragment", // Opcional, se usar fragmentos
+    "target": "es2020", // Ou "es2015" se necessário
+    "module": "es2020", // Ajustado para suportar ESM
+    "moduleResolution": "node", // Mantenha como "node" se "NodeNext" não for compatível
+    "outDir": "./dist",
+    "esModuleInterop": true, // Suporte para interop CommonJS/ESM
+    "strict": true, // Ativa verificações rigorosas de tipo
+    "skipLibCheck": true, // Ignora erros em definições de tipos de bibliotecas de terceiros
+    "baseUrl": ".", // Define a raiz do projeto como base para caminhos relativos
+    "paths": {
+      "@twind/*": ["node_modules/@twind/*"] // Alias opcional para Twind
+    }
+  }
+}
